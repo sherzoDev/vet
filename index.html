@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vetclinic</title>
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
 <body>
@@ -57,8 +57,7 @@
             <div class="container header__bottom-container">
                 <nav class="nav">
                     <a class="logo-link" href="./index.html">
-                        <img class="logo-link__img" src="./images/logo.svg" alt="site logo" width="178"
-                            height="86">
+                        <img class="logo-link__img" src="./images/logo.svg" alt="site logo" width="178" height="86">
                     </a>
                     <ul class="nav__list">
                         <li class="nav__item nav__item--active ">
@@ -132,8 +131,8 @@
                         height="26">
                 </button>
                 <button class="pagination__btn pagination__btn--next" type="button" aria-label="next button">
-                    <img class="pagination__img" src="./images/arrow-next.svg" alt="arrow next  image"
-                        width="14" height="26">
+                    <img class="pagination__img" src="./images/arrow-next.svg" alt="arrow next  image" width="14"
+                        height="26">
                 </button>
                 <div class="slider">
                     <ul class="services__top-list">
@@ -171,9 +170,8 @@
                     </ul>
                     <ul class="services__bottom-list">
                         <li class="none services__bottom-item">
-                            <img src="./images/slider-img.jpg" alt="slider img" class="services__bottom-img"
-                                width="524" height="329"
-                                srcset="./images/slider-img.jpg 1x, ./images/slider-img@2.jpg 2x">
+                            <img src="./images/slider-img.jpg" alt="slider img" class="services__bottom-img" width="524"
+                                height="329" srcset="./images/slider-img.jpg 1x, ./images/slider-img@2.jpg 2x">
                             <div class="services__bottom-info">
                                 <h3 class="services__bottom-header">Первичный осмотр</h3>
                                 <p class="services__bottom-desc">
@@ -203,10 +201,9 @@
                 <div>
                     <h2 class="notifications__header">Будь в курсе событий</h2>
                     <form action="https://echo.htmlacademy.ru" method="POST" class="notifications__form">
-                        <input type="email" name="email" aria-label="email input"
-                            placeholder="Укажите Ваш email адрес" class="notifications__form-input" required>
-                        <button class="btn btn-dark" type="submit"
-                            aria-label="subscribe button">Подписаться</button>
+                        <input type="email" name="email" aria-label="email input" placeholder="Укажите Ваш email адрес"
+                            class="notifications__form-input" required>
+                        <button class="btn btn-dark" type="submit" aria-label="subscribe button">Подписаться</button>
                     </form>
                 </div>
             </div>
@@ -267,9 +264,8 @@
                         </div>
                     </li>
                     <li class="articles__item ">
-                        <img class="articles__img" src="./images/catinjection.jpg" alt="kuchuk dori "
-                            width="305" height="180"
-                            srcset="./images/catinjection.jpg 1x, ./images/catinjection@2x.jpg 2x">
+                        <img class="articles__img" src="./images/catinjection.jpg" alt="kuchuk dori " width="305"
+                            height="180" srcset="./images/catinjection.jpg 1x, ./images/catinjection@2x.jpg 2x">
                         <div class="articles__info">
                             <div class="articles__details">
                                 <div class="articles__hashtag">
@@ -312,13 +308,11 @@
                     <form action="https://echo.htmlacademy.ru" method="POST" class="contact__form">
                         <input type="text" name="name" aria-label="name input" placeholder="Ваше имя"
                             class="contact__form-input" required>
-                        <input type="email" name="email" aria-label="email input"
-                            placeholder="Email для обратной связи" class="contact__form-input" required>
-                        <textarea class="contact__form-textarea" name="textarea"
-                            aria-label="Опишите Ваш вопрос." placeholder="Опишите Ваш вопрос." minlength="3"
-                            required></textarea>
-                        <button class="btn btn-gold btn-contact" type="submit"
-                            aria-label="Задать нам вопрос">Задать нам
+                        <input type="email" name="email" aria-label="email input" placeholder="Email для обратной связи"
+                            class="contact__form-input" required>
+                        <textarea class="contact__form-textarea" name="textarea" aria-label="Опишите Ваш вопрос."
+                            placeholder="Опишите Ваш вопрос." minlength="3" required></textarea>
+                        <button class="btn btn-gold btn-contact" type="submit" aria-label="Задать нам вопрос">Задать нам
                             вопрос</button>
                     </form>
                 </div>
@@ -399,6 +393,38 @@
     </footer>
 
     <!-- Site Footer Finish -->
+
+    <!-- Site Modal Start -->
+    <div class="overly modal--open">
+        <div class="modal ">
+            <button class="modal__close-btn"><img src="./images/modal-close.svg" alt="close"></button>
+            <div class="modal__container">
+                <div class="modal__left">
+                    <h2 class="modal__left-title">Авторизация:</h2>
+                    <div class="modal__google-box">
+                        <a class="modal-link-google" href="https://www.google.com" target="blank">Войти через Google</a>
+                    </div>
+                    <div class="modal__facebook-box">
+                        <a class="modal-link-facebook" href="https://www.facebook.com" target="blank">Войти через Facebook</a>
+                    </div>
+                    <img class="modal__bg-dog" src="./images/modal-bg-dog.png" alt="big dog modal">
+                </div>
+                <div class="modal__right">
+                    <h2 class="modal__right-title">Задать вопрос</h2>
+                    <form class="modal__form" action="https://www.echo.htmlacadmy.ru/courses">
+                        <input class="modal__form-input" type="text" aria-label="Enter Your name"
+                            placeholder="Ваше имя">
+                        <textarea cols="30" rows="10" placeholder="Опишите Ваш вопрос.
+                            
+Например: в каком возрасте можно прививать от бешенства?"></textarea>
+                        <button class="modal-btn" type="submit">Отправить </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Modal Finish -->
 
     <script src="./js/main.js"></script>
 </body>
