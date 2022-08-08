@@ -2106,3 +2106,67 @@ summary {
 }
 
 /* Modal Finish */
+
+/* Site Contact Page Start */
+
+/* Contact Hero Start */
+
+.contact-hero {
+    padding-left: 170px;
+}
+
+.contact-hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-hero__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;  
+    color: #333333;    
+}
+
+.contact-hero__text {
+    margin: 0;
+    padding: 0;
+    margin-top: 27px;
+    width: 447px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.contact-hero__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-hero__item {
+    flex-direction: column;
+}
+
+.contact-hero__item::before {
+    content: "";
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 73px;
+    height: 73px;
+    background-image: url("../images/location.svg");
+}
+
+.contact-hero__itemn:nth-child(1)::before {
+    display: inline-block;
+}
+
+/* Contact Hero Finish */
+
+/* Site Contact Page Finish */
