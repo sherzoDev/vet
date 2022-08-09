@@ -2113,6 +2113,8 @@ summary {
 
 .contact-hero {
     padding-left: 170px;
+    padding-top: 110px;
+    padding-bottom: 121px;
 }
 
 .contact-hero__wrapper {
@@ -2126,8 +2128,8 @@ summary {
     padding: 0;
     font-weight: 700;
     font-size: 70px;
-    line-height: 64px;  
-    color: #333333;    
+    line-height: 64px;
+    color: #333333;
 }
 
 .contact-hero__text {
@@ -2143,16 +2145,23 @@ summary {
 }
 
 .contact-hero__list {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 117px;
 }
 
 .contact-hero__item {
+    display: flex;
     flex-direction: column;
 }
 
-.contact-hero__item::before {
+.contact-hero__item:not(:first-child) {
+    margin-left: 118px;
+}
+
+.contact-hero__item:nth-child(1)::before {
     content: "";
     display: inline-block;
     background-position: center;
@@ -2161,12 +2170,123 @@ summary {
     width: 73px;
     height: 73px;
     background-image: url("../images/location.svg");
+    margin-bottom: 30px;
 }
 
-.contact-hero__itemn:nth-child(1)::before {
+.contact-hero__item:nth-child(2)::before {
+    content: "";
     display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 76px;
+    height: 71px;
+    background-image: url("../images/calendar.svg");
+    margin-bottom: 26px;
+}
+
+.contact-hero__item:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 46px;
+    height: 73px;
+    background-image: url("../images/phone.svg");
+    margin-bottom: 27px;
+}
+
+.contact-hero__item-loaction {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.contact-hero__item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    transition: all 0.3s;
+}
+
+.contact-hero__item-link:hover {
+    color: var(--main--color);
+}
+
+.contact-hero__right {
+    position: absolute;
+    text-align: right;
+    margin-left: 850px;
 }
 
 /* Contact Hero Finish */
+
+/* Start Contact Address Section */
+#contact-address {
+    padding: 258px 0 201px 0;
+}
+
+.contact-address-part {
+    width: 1519px;
+    margin: 0 auto;
+}
+
+.contact-address-part__title-box {
+    position: relative;
+}
+
+.contact-address-part__title-box::before {
+    position: absolute;
+    top: -121px;
+    left: 50%;
+    width: 112px;
+    height: 112px;
+    background-image: url("../images/search-pet.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.contact-address-part__title-box::after {
+    position: absolute;
+    top: -250px;
+    left: 500px;
+    width: 934px;
+    height: 330px;
+    background-image: url("../images/group-of-pets.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.contact-address-part__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.address-box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+}
+
+.address-box::before {
+    position: absolute;
+    top: -296px;
+    left: 10px;
+    width: 443px;
+    height: 342px;
+    background-image: url("../images/contact-address-img.png");
+    content: "";
+}
+
+/* End of Contact Address Section */
 
 /* Site Contact Page Finish */
