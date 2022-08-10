@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .example {
     display: -ms-grid;
     display: grid;
@@ -2520,8 +2527,8 @@ summary {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: -o-linear-gradient(top, white, black);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: linear-gradient(to bottom, white, black);
 }
 
@@ -2886,10 +2893,42 @@ summary {
     border: 2px solid #DC4D41;
 }
 
+.open-form__input:not(:-moz-placeholder-shown):not(:focus):invalid,
+.open-form__message:not(:-moz-placeholder-shown):not(:focus):invalid {
+    color: #DC4D41;
+    border: 2px solid #DC4D41;
+}
+
+.open-form__input:not(:-ms-input-placeholder):not(:focus):invalid,
+.open-form__message:not(:-ms-input-placeholder):not(:focus):invalid {
+    color: #DC4D41;
+    border: 2px solid #DC4D41;
+}
+
 .open-form__input:not(:placeholder-shown):not(:focus):invalid,
 .open-form__message:not(:placeholder-shown):not(:focus):invalid {
     color: #DC4D41;
     border: 2px solid #DC4D41;
+}
+
+.open-form__input::-webkit-input-placeholder,
+.open-form__message::-webkit-input-placeholder {
+    color: #949494;
+}
+
+.open-form__input::-moz-placeholder,
+.open-form__message::-moz-placeholder {
+    color: #949494;
+}
+
+.open-form__input:-ms-input-placeholder,
+.open-form__message:-ms-input-placeholder {
+    color: #949494;
+}
+
+.open-form__input::-ms-input-placeholder,
+.open-form__message::-ms-input-placeholder {
+    color: #949494;
 }
 
 .open-form__input::-webkit-input-placeholder,
@@ -3157,22 +3196,42 @@ summary {
 }
 
 .articles__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .article__item--box-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .article__item--box {
     margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -3184,7 +3243,7 @@ summary {
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 116px;
-} 
+}
 
 /* .blog-post-part__more-link-link::before {
     content: "";
@@ -3198,3 +3257,17 @@ summary {
 }  */
 
 /* End of Blog Post Section */
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
