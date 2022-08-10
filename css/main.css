@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .example {
     display: -ms-grid;
     display: grid;
@@ -15,8 +22,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: -o-linear-gradient(top, white, black);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: linear-gradient(to bottom, white, black);
 }
 
@@ -2151,7 +2158,8 @@ summary {
     align-items: center;
 }
 
-.contact-hero__title {
+.contact-hero__title,
+.about-hero-part__title {
     margin: 0;
     padding: 0;
     font-weight: 700;
@@ -2160,7 +2168,8 @@ summary {
     color: #333333;
 }
 
-.contact-hero__text {
+.contact-hero__text,
+.about-hero-part__text {
     margin: 0;
     padding: 0;
     margin-top: 27px;
@@ -2264,6 +2273,7 @@ summary {
 /* Contact Hero Finish */
 
 /* Start Contact Address Section */
+
 #contact-address {
     padding: 258px 0 201px 0;
 }
@@ -2334,12 +2344,12 @@ summary {
 /* ---------- Start About  Page ---------- */
 
 /* Start About Hero Section */
+
 #about-hero {
     padding: 117px 0 309px 0;
-    background-image: url("../images/about-hero-bg-img.png"), url("../images/group-of-pets.svg"), url("../images/search-pet-blue.svg");
+    background-image: url("../images/about__bg-img.png");
+    background-position: calc(50% + 60px);
     background-repeat: no-repeat;
-    background-position: calc(50% + 350px) calc(50% + 5px), calc(50% - 350px) calc(50% + 130px), calc(50% - 180px) calc(50% + 160px);
-    background-size: 448px 545px, 668px 235px, 112px;
 }
 
 .about-hero-part {
@@ -2350,6 +2360,7 @@ summary {
 /* End of About Hero Section */
 
 /* Start About Info Home Section */
+
 #about-info-home {
     background-color: #fff;
 }
@@ -2384,6 +2395,7 @@ summary {
 /* End of About Info Home Section */
 
 /* Start About Info Dog Section */
+
 .about-info-part__text-box-dog {
     width: 494px;
     margin: 0 auto 0 177px;
@@ -2518,4 +2530,17 @@ summary {
 
 /* End of About Info Barber Section */
 
-/* ---------- End of About Page ---------- */
+/* ---------- End of About Page ---------- */.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}   
