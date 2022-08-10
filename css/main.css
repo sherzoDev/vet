@@ -12,13 +12,14 @@
     -o-transition: all .5s;
     transition: all .5s;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: -o-linear-gradient(top, white, black);
     background: linear-gradient(to bottom, white, black);
 }
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -2143,11 +2144,11 @@ summary {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .contact-hero__title {
@@ -2178,8 +2179,8 @@ summary {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-top: 117px;
 }
 
@@ -2189,8 +2190,8 @@ summary {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .contact-hero__item:not(:first-child) {
@@ -2328,3 +2329,193 @@ summary {
 /* End of Contact Address Section */
 
 /* Site Contact Page Finish */
+
+
+/* ---------- Start About  Page ---------- */
+
+/* Start About Hero Section */
+#about-hero {
+    padding: 117px 0 309px 0;
+    background-image: url("../images/about-hero-bg-img.png"), url("../images/group-of-pets.svg"), url("../images/search-pet-blue.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 350px) calc(50% + 5px), calc(50% - 350px) calc(50% + 130px), calc(50% - 180px) calc(50% + 160px);
+    background-size: 448px 545px, 668px 235px, 112px;
+}
+
+.about-hero-part {
+    width: 411px;
+    margin-left: 100px;
+}
+
+/* End of About Hero Section */
+
+/* Start About Info Home Section */
+#about-info-home {
+    background-color: #fff;
+}
+
+.about-info-part {
+    width: 1519px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-info-part__text-box-house {
+    width: 557px;
+    margin: 0 66px 0 auto;
+}
+
+.about-info-part__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #949494;
+}
+
+.about-info-part__text-mark {
+    color: var(--main--color);
+}
+
+/* End of About Info Home Section */
+
+/* Start About Info Dog Section */
+.about-info-part__text-box-dog {
+    width: 494px;
+    margin: 0 auto 0 177px;
+}
+
+.about-info-part__text-box-dog .about-info-part__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.about-info-part__text-box-dog .about-info-part__text:nth-child(1) {
+    margin-bottom: 19px;
+}
+
+.about-info-part__text-mark-blue {
+    color: var(--main--blue-color);
+}
+
+/* End of About Info Dog Section */
+
+/* Start About Info Barber Section */
+
+#about-info-barber {
+    overflow-x: hidden;
+    padding-bottom: 145px;
+}
+
+.about-info-barber-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.barber-info {
+    width: 416px;
+}
+
+.barber-info__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 48px;
+    color: var(--main-text-color);
+}
+
+.barber-info__title-mark {
+    color: var(--main--color);
+}
+
+.barber-info__text-box {
+    width: 343px;
+}
+
+.barber-info__text {
+    margin: 28px 0 88px 0;
+    line-height: 20px;
+    color: #949494;
+}
+
+.barber-info__slide-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.barber-info__btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.barber-info__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.barber-info__btn:nth-child(1) {
+    margin-right: 64px;
+}
+
+.barber-info__btn:hover {
+    background-color: #ffffff;
+}
+
+.barber-info__btn:active {
+    opacity: 0.6;
+}
+
+.barber-info__slide-counter-box {
+    margin-left: 75px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #949494;
+}
+
+.barber-info__slide-top {
+    font-size: 20px;
+    color: var(--main-text-color);
+}
+
+.barber-info__slide-border {
+    color: var(--main-text-color);
+}
+
+.barber-image-box {
+    position: relative;
+    right: -245px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.barber-image-box__image:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* End of About Info Barber Section */
+
+/* ---------- End of About Page ---------- */
